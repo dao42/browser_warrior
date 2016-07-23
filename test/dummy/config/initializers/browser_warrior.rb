@@ -10,6 +10,6 @@ BrowserWarrior.detect do |browser|
   end
 end
 
-ActiveSupport.on_load(:action_controller) do
-  include BrowserWarrior::Controllers::Helpers
-end
+#ActiveSupport.on_load(:action_controller) do
+  #include BrowserWarrior::Controllers::Helpers
+#end

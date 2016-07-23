@@ -9,7 +9,7 @@ module BrowserWarrior
       def check_browser_warrior!
         browser = ::Browser.new(request.user_agent)
         if BrowserWarrior.do_detect(browser)
-          render 'browser_warrior/home/index', layout: false
+          render 'browser_warrior/index', layout: false
         end
       end
     end
