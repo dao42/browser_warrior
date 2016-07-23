@@ -3,6 +3,7 @@ require 'browser/version'
 require 'browser'
 
 module BrowserWarrior
+
   module Controllers
     module Helpers
       extend ActiveSupport::Concern
@@ -15,9 +16,7 @@ module BrowserWarrior
       end
     end
   end
-end
 
-module BrowserWarrior
   @detect_block = lambda do |browser|
     if browser.ie?(6) or browser.ie?(7) or browser.ie?(8)
       false
