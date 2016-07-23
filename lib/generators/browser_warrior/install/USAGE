@@ -1,0 +1,8 @@
+Description:
+    Create browser_warrior initializer
+
+Example:
+    rails generate browser_warrior:install
+
+    This will create:
+        config/initializers/browser_warrior.rb
