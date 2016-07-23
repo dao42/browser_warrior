@@ -48,7 +48,6 @@ See more: <https://github.com/fnando/browser#usage>
 Sure. Execute:
 
 ```bash
-# We are doing more work on it
 $ rails g browser_warrior:views
 ```
 
