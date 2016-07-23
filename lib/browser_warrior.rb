@@ -7,6 +7,9 @@ module BrowserWarrior
   module Controllers
     module Helpers
       extend ActiveSupport::Concern
+      included do
+        before_action :check_browser_warrior! if BrowserWarrior.autoenable
+      end
 
       def check_browser_warrior!
         browser = ::Browser.new(request.user_agent)
@@ -24,6 +27,9 @@ module BrowserWarrior
       true
     end
   end
+
+  @@autoenable = true
+  mattr_accessor :autoenable
 
   def self.detect(&block)
     @detect_block = block

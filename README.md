@@ -18,11 +18,7 @@ And then:
 $ bundle
 ```
 
-Add this code to your `application_controller.rb`:
-
-```ruby
-before_action :check_browser_warrior!
-```
+No need more code!!
 
 Then all of ie 6/7/8 user will be rejected to a page that suggests upgrading their browsers.
 
