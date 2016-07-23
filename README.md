@@ -56,7 +56,18 @@ Then edit them.
 
 Easy, is it?
 
-## TODO
+## Extra Good Advise
+
+I advise adding the code below to your base layout( e.g. `application.html.erb` ):
+
+```html
+// app/layouts/application.html.erb
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+```
+
+
+## Roadmap
 
 - [x] Release 0.1.0, one line code to support rejecting old browser page
 - [ ] I18n support
