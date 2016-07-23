@@ -59,8 +59,10 @@ Easy, is it?
 
 ## TODO
 
-* i18n support
-* extend support rails 4 or 3.
+- [x] Release 0.1.0, one line code to support rejecting old browser page
+- [ ] I18n support
+- [ ] Extend support rails 4 and rails 3.
+- [ ] Design a mechanism to support more than one themes.
 
 ## Contributing
 [windy](https://github.com/windy)
