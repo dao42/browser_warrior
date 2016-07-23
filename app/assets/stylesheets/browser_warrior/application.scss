@@ -1,0 +1,78 @@
+.browser-warrior-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  background: rgba(0,0,0,0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC000000', endColorstr='#CC000000',GradientType=0);
+  font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+  color: #666;
+}
+.browser-warrior-mask a {
+  color: #09F;
+  text-decoration: none;
+}
+.browser-warrior-mask a:hover {
+  color: #F90;
+}
+.browser-warrior-dialog {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -340px;
+  padding: 40px;
+  background: #FAFAFA;
+}
+.browser-warrior-title {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.browser-warrior-para {
+  padding: 0;
+  margin: 15px 0;
+  zoom: 1;
+}
+.browser-warrior-para:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  font-size: 0;
+}
+a.browser-warrior-browser-link {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #666;
+}
+a.browser-warrior-browser-link:hover {
+  background: #EEE;
+}
+.browser-warrior-browser-icon {
+  display: block;
+  margin-bottom: 5px;
+  font-style: normal;
+  width: 135px;
+  height: 135px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.browser-warrior-browser-icon-chrome {
+  background-image: asset-url('browser_warrior/chrome.png');
+}
+
+.browser-warrior-browser-icon-opera {
+  background-image: asset-url('browser_warrior/opera.png');
+}
+.browser-warrior-browser-icon-firefox {
+  background-image: asset-url('browser_warrior/firefox.png');
+}
+.browser-warrior-browser-icon-ie {
+  background-image: asset-url('browser_warrior/ie.png');
+}
