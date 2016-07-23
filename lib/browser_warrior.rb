@@ -4,6 +4,8 @@ require 'browser'
 
 module BrowserWarrior
 
+  ROOT = File.expand_path(File.join( File.dirname(__FILE__), '..'))
+
   module Controllers
     module Helpers
       extend ActiveSupport::Concern

@@ -1,0 +1,5 @@
+Description:
+    Copy views & css files into main app
+
+Example:
+    rails generate browser_warrior:views
