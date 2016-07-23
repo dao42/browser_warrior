@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>浏览器不被支付</title>
+  <%= stylesheet_link_tag    "browser_warrior/application", media: "all" %>
+</head>
+<body>
+  <div class="browser-warrior-mask">
+    <div class="browser-warrior-dialog" id="browser-warrior-dialog">
+      <div class="browser-warrior-text">
+        <h1 class="browser-warrior-title">您正在使用低版本的 IE 浏览器！</h1>
+        <p class="browser-warrior-para">
+          这可能会带来非常严重的安全隐患，并且不利于我们为您提供良好的用户体验。
+        </p>
+        <p class="browser-warrior-para">
+          使用非现代浏览器浏览本网站可能会遭遇文字错位，布局混乱，功能失灵等意外情况。
+        </p>
+        <p class="browser-warrior-para">
+          为了您的良好浏览体验，请安装以下浏览器：
+        </p>
+        <div class="browser-warrior-para">
+          <a class="browser-warrior-browser-link" href="http://www.baidu.com/s?wd=chrome" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-chrome"></i>
+            Chrome浏览器
+          </a>
+          <a class="browser-warrior-browser-link" href="http://www.firefox.com.cn/" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-firefox"></i>
+            Firefox浏览器
+          </a>
+          <a class="browser-warrior-browser-link" href="http://www.opera.com/zh-cn" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-opera"></i>
+            Opera浏览器
+          </a>
+          <a class="browser-warrior-browser-link" href="http://www.baidu.com/s?wd=ie" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-ie"></i>
+            升级IE到最新版本
+          </a>
+        </div>
+        <p class="browser-warrior-para">
+          如果您正在使用
+          <a href="http://ie.sogou.com/"   target="_blank">搜狗浏览器</a>，
+          <a href="http://browser.qq.com/" target="_blank">QQ浏览器</a>，
+          <a href="http://www.liebao.cn/"  target="_blank">猎豹浏览器</a>，
+          <a href="http://chrome.360.cn/"  target="_blank">360极速浏览器</a>
+          等国产浏览器，您也可尝试将其切换到高速/极速模式
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

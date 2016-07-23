@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     browser_warrior (0.1.0)
+      browser
       rails (~> 5.0)
       sass-rails (~> 5.0)
 
@@ -46,7 +47,9 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.0)
+    browser (2.1.0)
     builder (3.2.2)
+    byebug (9.0.5)
     concurrent-ruby (1.0.2)
     erubis (2.7.0)
     globalid (0.3.6)
@@ -123,6 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   browser_warrior!
+  byebug
   sqlite3
 
 BUNDLED WITH

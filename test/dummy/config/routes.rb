@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount BrowserWarrior::Engine => "/"
+  root 'visitors#index'
 end
