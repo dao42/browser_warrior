@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    browser_warrior (0.1.0)
+    browser_warrior (0.2.0)
       browser
       rails (~> 5.0)
       sass-rails (~> 5.0)
@@ -47,7 +47,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.0)
-    browser (2.1.0)
+    browser (2.2.0)
     builder (3.2.2)
     byebug (9.0.5)
     concurrent-ruby (1.0.2)
@@ -98,7 +98,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (11.2.2)
     sass (3.4.22)
-    sass-rails (5.0.5)
+    sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
