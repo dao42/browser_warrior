@@ -18,7 +18,14 @@ module BrowserWarrior
 end
 
 module BrowserWarrior
-  @detect_block = nil
+  @detect_block = lambda do |browser|
+    if browser.ie?(6) or browser.ie?(7) or browser.ie?(8)
+      false
+    else
+      true
+    end
+  end
+
   def self.detect(&block)
     @detect_block = block
   end
