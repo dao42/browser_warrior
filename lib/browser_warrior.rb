@@ -1,4 +1,5 @@
 require "browser_warrior/engine"
+require 'browser/version'
 require 'browser'
 
 module BrowserWarrior
@@ -8,7 +9,7 @@ module BrowserWarrior
 
       def check_browser_warrior!
         browser = ::Browser.new(request.user_agent)
-        if BrowserWarrior.do_detect(browser)
+        if ! BrowserWarrior.do_detect(browser)
           render 'browser_warrior/index', layout: false
         end
       end
