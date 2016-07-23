@@ -1,12 +1,12 @@
 # BrowserWarrior
 
-Are you a warrior to reject your ie 6/7/8 user?
+Are you a warrior? Do you dare to reject your ie 6/7/8 user?
 
-Yes, we should say YES.
+Yes, at now we should say YES.
 
-**BrowserWarrior** make it super easy.
+**BrowserWarrior** make the action super easy.
 
-Make your Ruby on Rails Application rejecting ie6/7/8 with only one line code.
+Make your Ruby on Rails 5 Application rejecting ie6/7/8 with only one line code. ( Notice: only support Rails 5 now, we will do more work to support 4 & 3 )
 
 ```ruby
 # in your Gemfile
