@@ -22,7 +22,10 @@ No need more code!!
 
 Then all of ie 6/7/8 user will be rejected to a page that suggests upgrading their browsers.
 
-Upgrading browser screenshot
+Upgrading browser screenshot(en)
+![screenshot](https://github.com/80percent/browser_warrior/raw/master/img/browser-en.jpg)
+
+Upgrading browser screenshot(zh-CN)
 ![screenshot](https://github.com/80percent/browser_warrior/raw/master/img/browser.png)
 
 ## More configuration
