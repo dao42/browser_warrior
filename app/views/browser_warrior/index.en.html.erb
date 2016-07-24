@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unsupported Browser</title>
+  <%= stylesheet_link_tag  "browser_warrior/application", media: "all" %>
+</head>
+<body>
+  <div class="browser-warrior-mask">
+    <div class="browser-warrior-dialog" id="browser-warrior-dialog">
+      <div class="browser-warrior-text">
+        <h1 class="browser-warrior-title">You are using old IE browser!</h1>
+        <p class="browser-warrior-para">
+          This browser maybe cause security problem, and it will be a bad user experience to visit our website.
+        </p>
+        <p class="browser-warrior-para">
+          Wrong text location, confused layout, not-worked feature maybe happen.
+        </p>
+        <p class="browser-warrior-para">
+          We do NOT support your browser, please see these below:
+        </p>
+        <div class="browser-warrior-para">
+          <a class="browser-warrior-browser-link" href="https://www.google.com/search?q=chrome" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-chrome"></i>
+            Chrome Browser
+          </a>
+          <a class="browser-warrior-browser-link" href="https://www.google.com/search?q=firefox" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-firefox"></i>
+            Firefox Browser
+          </a>
+          <a class="browser-warrior-browser-link" href="https://www.google.com/search?q=opera" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-opera"></i>
+            Opera Browser
+          </a>
+          <a class="browser-warrior-browser-link" href="https://www.google.com/search?q=ie" target="_blank" hidefocus>
+            <i class="browser-warrior-browser-icon browser-warrior-browser-icon-ie"></i>
+            Upgrade your IE Browser
+          </a>
+        </div>
+        <p class="browser-warrior-para">
+          Please choose and install one, then visit our website again.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -6,6 +6,7 @@ module BrowserWarrior
 
       def copy_views
         copy_file "app/views/browser_warrior/index.html.erb", "app/views/browser_warrior/index.html.erb"
+        copy_file "app/views/browser_warrior/index.en.html.erb", "app/views/browser_warrior/index.en.html.erb"
       end
 
       def copy_css_image

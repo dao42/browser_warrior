@@ -56,6 +56,14 @@ Then edit them.
 
 Easy, is it?
 
+## i18n
+
+`BrowserWarrior` will render the correct page based on your i18n locale config.
+
+Now it supports `en` and `zh-CN`.
+
+You can easily add more locale pages.
+
 ## Extra Good Advise
 
 I advise adding the code below to your base layout( e.g. `application.html.erb` ):
@@ -70,7 +78,7 @@ I advise adding the code below to your base layout( e.g. `application.html.erb` 
 ## Roadmap
 
 - [x] Release 0.1.0, one line code to support rejecting old browser page
-- [ ] I18n support
+- [x] I18n support ( 0.3.0 )
 - [ ] Extend support rails 4 and rails 3.
 - [ ] Design a mechanism to support more than one themes.
 
