@@ -20,11 +20,14 @@
 }
 .browser-warrior-dialog {
   position: absolute;
-  top: 20%;
   left: 50%;
   margin-left: -340px;
+  top: 50%;
+  margin-top: -230px;
   padding: 40px;
   background: #FAFAFA;
+  width: 665px;
+  height: 380px;
 }
 .browser-warrior-title {
   font-size: 20px;
