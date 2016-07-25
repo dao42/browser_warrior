@@ -1,12 +1,11 @@
 # BrowserWarrior
 
-Are you a warrior? Do you dare to reject your ie 6/7/8 user?
+Are you a warrior? Are you brave enough to reject your IE 6/7/8 users?
 
-Yes, at now we should say YES.
+It is time to say YES.
 
-**BrowserWarrior** make the action super easy.
-
-Make your Ruby on Rails 5 Application rejecting ie6/7/8 with only one line code. ( Notice: only support Rails 5 now, we will do more work to support 4 & 3 )
+**BrowserWarrior** makes this super easy with one line of code.  
+Note: Only Rails 5 is supported at this time. Support for 3 & 4 is being worked on.
 
 ```ruby
 # in your Gemfile
@@ -15,24 +14,24 @@ gem 'browser_warrior'
 
 And then:
 ```bash
-$ bundle
+$ bundle install
 ```
 
-No need more code!!
+That's it.
 
-Then all of ie 6/7/8 user will be rejected to a page that suggests upgrading their browsers.
+All IE 6/7/8 users will be redirected to a page that suggests they should upgrade their browsers.
 
-Upgrading browser screenshot(en)
+Upgrading browser screenshot (en)
 ![screenshot](https://github.com/80percent/browser_warrior/raw/master/img/browser-en.jpg)
 
-Upgrading browser screenshot(zh-CN)
+Upgrading browser screenshot (zh-CN)
 ![screenshot](https://github.com/80percent/browser_warrior/raw/master/img/browser.png)
 
-## More configuration
+## Configuration
 
-**QA**: Can I add more unsupported browsers?
+**Question**: Can I add more unsupported browsers?
 
-Very easy. Execute:
+Very easy. Run:
 
 ```bash
 $ rails g browser_warrior:install
@@ -40,36 +39,30 @@ $ rails g browser_warrior:install
 
 It will generate `browser_warrior.rb` in `config/initializers/`.
 
-Edit it.
-
-There is a `browser` object that you can easily custom your requirement.
+There is a `browser` object that you can easily customize.
 
 See more: <https://github.com/fnando/browser#usage>
 
-**QA**: Can I custom the suggested browser page?
+**Question**: Can I customize the suggested browser page?
 
-Sure. Execute:
+Sure. Run:
 
 ```bash
 $ rails g browser_warrior:views
 ```
 
-It will generate `view` and `css` files for you.
-Then edit them.
+It will generate `view` and `css` files for you that can be edited.
 
-Easy, is it?
+Nice and easy.
 
 ## i18n
 
-`BrowserWarrior` will render the correct page based on your i18n locale config.
+`BrowserWarrior` will render the correct page based on your i18n locale config.  
+It currently supports `en` and `zh-CN`, and you can add more locale pages easily.
 
-Now it supports `en` and `zh-CN`.
+## Advice
 
-You can easily add more locale pages.
-
-## Extra Good Advise
-
-I advise adding the code below to your base layout( e.g. `application.html.erb` ):
+I suggest adding the code below to your base layout( e.g. `application.html.erb` ):
 
 ```html
 // app/layouts/application.html.erb
@@ -82,11 +75,12 @@ I advise adding the code below to your base layout( e.g. `application.html.erb` 
 
 - [x] Release 0.1.0, one line code to support rejecting old browser page
 - [x] I18n support ( 0.3.0 )
-- [ ] Extend support rails 4 and rails 3.
-- [ ] Design a mechanism to support more than one themes.
+- [ ] Extend support to rails 4 and rails 3.
+- [ ] Extend support to more than one theme.
 
 ## Contributing
-[windy](https://github.com/windy)
+[windy](https://github.com/windy)  
+[azah](https://github.com/azah) (Fixing EN grammar)
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
