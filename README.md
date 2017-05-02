@@ -4,8 +4,8 @@ Are you a warrior? Are you brave enough to reject your IE 6/7/8 users?
 
 It is time to say YES.
 
-**BrowserWarrior** makes this super easy with one line of code.  
-Note: Only Rails 5 is supported at this time. Support for 3 & 4 is being worked on.
+**BrowserWarrior** makes this super easy with one line of code.
+Note: Only Rails 5.0 & 5.1 is supported at this time.
 
 ```ruby
 # in your Gemfile
@@ -57,7 +57,7 @@ Nice and easy.
 
 ## i18n
 
-`BrowserWarrior` will render the correct page based on your i18n locale config.  
+`BrowserWarrior` will render the correct page based on your i18n locale config.
 It currently supports `en` and `zh-CN`, and you can add more locale pages easily.
 
 ## Advice
@@ -79,7 +79,7 @@ I suggest adding the code below to your base layout( e.g. `application.html.erb`
 - [ ] Extend support to more than one theme.
 
 ## Contributing
-[windy](https://github.com/windy)  
+[windy](https://github.com/windy)
 [azah](https://github.com/azah) (Fixing EN grammar)
 
 ## License
