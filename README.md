@@ -5,7 +5,8 @@ Are you a warrior? Are you brave enough to reject your IE 6/7/8 users?
 It is time to say YES.
 
 **BrowserWarrior** makes this super easy with one line of code.
-Note: Only Rails 5.0 & 5.1 is supported at this time.
+
+**Note**: Only Rails 5.0 & 5.1 is supported at this time.
 
 ```ruby
 # in your Gemfile
@@ -79,8 +80,8 @@ I suggest adding the code below to your base layout( e.g. `application.html.erb`
 - [ ] Extend support to more than one theme.
 
 ## Contributing
-[windy](https://github.com/windy)
-[azah](https://github.com/azah) (Fixing EN grammar)
+*[windy](https://github.com/windy)
+*[azah](https://github.com/azah) (Fixing EN grammar)
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
