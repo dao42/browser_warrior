@@ -80,8 +80,9 @@ I suggest adding the code below to your base layout( e.g. `application.html.erb`
 - [ ] Extend support to more than one theme.
 
 ## Contributing
-*[windy](https://github.com/windy)
-*[azah](https://github.com/azah) (Fixing EN grammar)
+
+* [windy](https://github.com/windy)
+* [azah](https://github.com/azah) (Fixing EN grammar)
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
