@@ -14,10 +14,16 @@ module BrowserWarrior
       end
 
       def check_browser_warrior!
-        # ignore detect rails inline controller
+        # ignore rails inline controller
         if params[:controller] == 'rails/welcome'
           return
         end
+
+        # ignore no html controller
+        if params[:format].present? && params[:format] != :html
+          return
+        end
+
         browser = ::Browser.new(request.user_agent)
         if ! BrowserWarrior.do_detect(browser)
           render 'browser_warrior/index', layout: false
