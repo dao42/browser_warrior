@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["yafeilee"]
   s.email       = ["lyfi2003@gmail.com"]
   s.homepage    = "https://github.com/80percent/browser_warrior"
-  s.summary     = "Make your Rails app reject your ie 6/7/8 user just one line code"
-  s.description = "BrowserWarrior is a Ruby on Rails engine that let you reject your ie6/7/8 user just one line code"
+  s.summary     = "Make your Rails app reject your non-modern browser user just one line code"
+  s.description = "BrowserWarrior is a Ruby on Rails engine that let you reject your non-modern browser user just one line code"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]

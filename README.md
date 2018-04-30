@@ -1,12 +1,12 @@
 # BrowserWarrior
 
-Are you a warrior? Are you brave enough to reject your IE 6/7/8 users?
+Are you a warrior? Are you brave enough to reject your non-modern browser users?
 
 It is time to say YES.
 
 **BrowserWarrior** makes this super easy with one line of code.
 
-**Note**: Only Rails 5.0 & 5.1 is supported at this time.
+**Note**: Only Ruby on Rails 5.x is supported at this time.
 
 ```ruby
 # in your Gemfile

@@ -1,6 +1,7 @@
 BrowserWarrior.detect do |browser|
   # See https://github.com/fnando/browser#usage for more usage
-  if browser.ie?(6) or browser.ie?(7) or browser.ie?(8)
+  # Webkit, Firefox 17+, IE 9+ and Opera 12+
+  if ! browser.modern?
     # reject when false
     false
   else
