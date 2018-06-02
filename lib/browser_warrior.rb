@@ -24,6 +24,11 @@ module BrowserWarrior
           return
         end
 
+        # ignore post request
+        if request.post?
+          return
+        end
+
         browser = ::Browser.new(request.user_agent)
         if ! BrowserWarrior.do_detect(browser)
           render 'browser_warrior/index', layout: false
@@ -33,11 +38,14 @@ module BrowserWarrior
   end
 
   @detect_block = lambda do |browser|
-    if browser.ie?(6) or browser.ie?(7) or browser.ie?(8)
-      false
-    else
-      true
+    next true if Rails.env.test?
+    next true if browser.bot?
+
+    if ! browser.modern?
+      next false
     end
+
+    next true
   end
 
   @@autoenable = true
