@@ -24,8 +24,8 @@ module BrowserWarrior
           return
         end
 
-        # ignore post request
-        if request.post?
+        # ignore non-get request
+        if ! request.get?
           return
         end
 
@@ -40,6 +40,9 @@ module BrowserWarrior
   @detect_block = lambda do |browser|
     next true if Rails.env.test?
     next true if browser.bot?
+
+    # Allow weixin callback
+    next true if browser.platform.other?
 
     if ! browser.modern?
       next false
