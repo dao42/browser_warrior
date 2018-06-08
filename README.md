@@ -10,7 +10,7 @@ It is time to say YES.
 
 ```ruby
 # in your Gemfile
-gem 'browser_warrior'
+gem 'browser_warrior', '~> 0.10.0'
 ```
 
 And then:
