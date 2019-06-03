@@ -8,9 +8,11 @@ It is time to say YES.
 
 **Note**: Only Ruby on Rails 5.x is supported at this time.
 
+**Note**: Ruby on Rails 6.x is supported as well.
+
 ```ruby
 # in your Gemfile
-gem 'browser_warrior', '~> 0.10.0'
+gem 'browser_warrior', '~> 0.11.0'
 ```
 
 And then:
@@ -74,10 +76,9 @@ I suggest adding the code below to your base layout( e.g. `application.html.erb`
 
 ## Roadmap
 
+- [x] Release 0.11.0, support Ruby on Rails 6.x
 - [x] Release 0.1.0, one line code to support rejecting old browser page
 - [x] I18n support ( 0.3.0 )
-- [ ] Extend support to rails 4 and rails 3.
-- [ ] Extend support to more than one theme.
 
 ## Contributing
 
