@@ -22,13 +22,13 @@ $ bundle install
 
 That's it.
 
-All IE 6/7/8 users will be redirected to a page that suggests they should upgrade their browsers.
+All non-modern browser users will be redirected to a page that suggests they should upgrade their browsers.
 
 Upgrading browser screenshot (en)
-![screenshot](https://github.com/80percent/browser_warrior/raw/master/img/browser-en.jpg)
+![screenshot](https://github.com/dao42/browser_warrior/raw/master/img/browser-en.jpg)
 
 Upgrading browser screenshot (zh-CN)
-![screenshot](https://github.com/80percent/browser_warrior/raw/master/img/browser.png)
+![screenshot](https://github.com/dao42/browser_warrior/raw/master/img/browser.png)
 
 ## Configuration
 
