@@ -44,16 +44,15 @@ module BrowserWarrior
     # Allow weixin callback
     next true if browser.platform.other?
 
-    is_modern_browser = \
-      browser.chrome?(">= 65") or
-      browser.safari?(">= 10") or
-      browser.firefox?(">= 52") or
-      browser.ie?(">= 11") && !browser.compatibility_view? or
-      browser.edge?(">= 15") or
-      browser.opera?(">= 50") or
-      browser.facebook? \
-        && browser.safari_webapp_mode? \
-        && browser.webkit_full_version.to_i >= 602
+    is_modern_browser = [
+      browser.chrome?(">= 65"),
+      browser.safari?(">= 10"),
+      browser.firefox?(">= 52"),
+      browser.ie?(">= 11") && !browser.compatibility_view?,
+      browser.edge?(">= 15"),
+      browser.opera?(">= 50"),
+      browser.facebook? && browser.safari_webapp_mode? && browser.webkit_full_version.to_i >= 602
+    ].any?
 
     if ! is_modern_browser
       next false
