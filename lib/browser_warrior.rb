@@ -41,23 +41,25 @@ module BrowserWarrior
     next true if Rails.env.test?
     next true if browser.bot?
 
+    next true unless browser.known?
+
     # Allow weixin callback
     next true if browser.platform.other?
 
-    is_modern_browser = [
-      browser.chrome?(">= 65"),
-      browser.safari?(">= 10"),
-      browser.firefox?(">= 52"),
-      browser.ie?(">= 11") && !browser.compatibility_view?,
-      browser.edge?(">= 15"),
-      browser.opera?(">= 50"),
-      browser.facebook? && browser.safari_webapp_mode? && browser.webkit_full_version.to_i >= 602
-    ].any?
+    # See https://github.com/fnando/browser#usage for more usage
+    next true if browser.wechat?
+    next true if browser.weibo?
+    next true if browser.facebook?
 
-    if ! is_modern_browser
-      next false
-    end
+    # Block known non-modern browser
+    next false if browser.chrome?("<= 65")
+    next false if browser.safari?("< 10")
+    next false if browser.firefox?("< 52")
+    next false if browser.ie?("< 11")
+    next false if browser.edge?("< 15")
+    next false if browser.opera?("< 50")
 
+    # Allow by default
     next true
   end
 
