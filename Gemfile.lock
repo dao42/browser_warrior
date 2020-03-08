@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    browser_warrior (0.13.0)
+    browser_warrior (0.14.0)
       browser (>= 4.0, < 5)
       rails (>= 5.0, < 7)
       sass-rails
