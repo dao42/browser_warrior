@@ -12,7 +12,7 @@ It is time to say YES.
 
 ```ruby
 # in your Gemfile
-gem 'browser_warrior', '~> 0.11.0'
+gem 'browser_warrior', '~> 0.14.0'
 ```
 
 And then:
