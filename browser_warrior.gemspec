@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "BrowserWarrior is a Ruby on Rails engine that let you reject your non-modern browser user just one line code"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", ">= 5.0", "< 7"
   s.add_dependency "sass-rails"
